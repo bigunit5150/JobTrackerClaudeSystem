@@ -1,0 +1,65 @@
+{
+  "database_name": "Resume Repository",
+  "notion_database_id": "b3b24f311f4c4919b9f4659d6edd1eda",
+  "data_source_id": "86736de1-c7f1-428a-9d7e-b74e1d516132",
+  "description": "Stores base resume variants and the Resume Selection Rules config document. Claude reads from this on every job review.",
+  "special_rows": [
+    {
+      "Resume Name": "Resume Selection Rules v1.0",
+      "Category": "Other",
+      "notes": "This row stores the master configuration document generated during onboarding. Claude reads it before every job review."
+    }
+  ],
+  "properties": [
+    {
+      "name": "Resume Name",
+      "type": "title",
+      "required": true,
+      "notes": "e.g. 'Director of Engineering - Base', 'Senior Engineering Manager - Base', 'Resume Selection Rules v1.0'"
+    },
+    {
+      "name": "Category",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "name": "Director", "color": "blue" },
+        { "name": "Senior Manager", "color": "green" },
+        { "name": "VP", "color": "purple" },
+        { "name": "AI/Technical Consulting", "color": "orange" },
+        { "name": "Other", "color": "gray", "notes": "Used for Resume Selection Rules and non-resume documents" }
+      ]
+    },
+    {
+      "name": "Version",
+      "type": "text",
+      "required": false,
+      "notes": "e.g. 'v1.0', 'v1.1'. Increment when making significant changes."
+    },
+    {
+      "name": "Last Updated",
+      "type": "date",
+      "required": false
+    },
+    {
+      "name": "Resume Content",
+      "type": "text",
+      "required": true,
+      "notes": "Full plain text of the resume OR full text of the rules document. Claude reads this field."
+    },
+    {
+      "name": "Active",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "name": "Yes", "color": "green", "notes": "Claude will use this resume for selection" },
+        { "name": "No", "color": "red", "notes": "Archived — Claude will not use this resume" }
+      ]
+    },
+    {
+      "name": "Notes",
+      "type": "text",
+      "required": false,
+      "notes": "Human notes about this resume variant or document"
+    }
+  ]
+}

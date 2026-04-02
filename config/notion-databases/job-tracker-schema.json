@@ -1,0 +1,100 @@
+{
+  "database_name": "Job Tracker",
+  "notion_database_id": "320037c8-790b-8004-9498-d26d7d85322c",
+  "data_source_id": "320037c8-790b-805d-975d-000b6d0dc745",
+  "description": "Stores every saved job posting. The central hub for Phase 2 AI review.",
+  "properties": [
+    {
+      "name": "Role Title",
+      "type": "title",
+      "required": true,
+      "notes": "Default title property — the job title"
+    },
+    {
+      "name": "Company",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "Job URL",
+      "type": "url",
+      "required": false,
+      "notes": "Link to the original job posting"
+    },
+    {
+      "name": "Raw JD",
+      "type": "text",
+      "required": true,
+      "notes": "Full job description text. Required for AI review. Populated by Chrome extension."
+    },
+    {
+      "name": "Status",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "name": "Bookmarked", "color": "yellow", "notes": "Saved, awaiting AI review" },
+        { "name": "AI Reviewed", "color": "red", "notes": "Claude has processed this role" },
+        { "name": "AI Reviewed - Skip", "color": "gray", "notes": "Claude flagged as poor fit" },
+        { "name": "Applying", "color": "orange", "notes": "Decided to apply" },
+        { "name": "Applied", "color": "gray", "notes": "Application submitted" },
+        { "name": "Interviewing", "color": "pink", "notes": "Active interview process" },
+        { "name": "Offer", "color": "brown", "notes": "Offer received" },
+        { "name": "Closed", "color": "default", "notes": "Rejected, withdrew, or role filled" }
+      ]
+    },
+    {
+      "name": "AI Notes",
+      "type": "text",
+      "required": false,
+      "notes": "Written by Claude: fit tier, resume selection rationale, strengths, gaps, recommendation"
+    },
+    {
+      "name": "Resume",
+      "type": "text",
+      "required": false,
+      "notes": "Full optimized resume text written by Claude for this specific role"
+    },
+    {
+      "name": "Location",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "Job Type",
+      "type": "select",
+      "required": false,
+      "options": [
+        { "name": "Remote", "color": "blue" },
+        { "name": "Hybrid", "color": "red" },
+        { "name": "Onsite", "color": "green" }
+      ]
+    },
+    {
+      "name": "Salary Range",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "Date Added",
+      "type": "date",
+      "required": false
+    },
+    {
+      "name": "Date Applied",
+      "type": "date",
+      "required": false
+    },
+    {
+      "name": "ATS Source",
+      "type": "text",
+      "required": false,
+      "notes": "e.g. Greenhouse, Lever, Workday, LinkedIn"
+    },
+    {
+      "name": "Notes",
+      "type": "text",
+      "required": false,
+      "notes": "Your personal notes — not used by Claude"
+    }
+  ]
+}
