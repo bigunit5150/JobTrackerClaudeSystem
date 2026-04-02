@@ -1,7 +1,7 @@
 {
   "database_name": "Resume Repository",
-  "notion_database_id": "b3b24f311f4c4919b9f4659d6edd1eda",
-  "data_source_id": "86736de1-c7f1-428a-9d7e-b74e1d516132",
+  "notion_database_id": "YOUR_DATABASE_ID",
+  "data_source_id": "YOUR_DATA_SOURCE_ID",
   "description": "Stores base resume variants and the Resume Selection Rules config document. Claude reads from this on every job review.",
   "special_rows": [
     {

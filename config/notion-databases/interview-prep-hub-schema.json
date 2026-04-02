@@ -1,7 +1,7 @@
 {
   "database_name": "Interview Prep Hub",
-  "notion_database_id": "f412b893563e460bbdd5128141f6ec7d",
-  "data_source_id": "ec1090f9-1dfe-4430-a1b7-b5305633945b",
+  "notion_database_id": "YOUR_DATABASE_ID",
+  "data_source_id": "YOUR_DATA_SOURCE_ID",
   "description": "One row per actively-pursued opportunity. Stores all prep materials and links back to the Job Tracker row.",
   "properties": [
     {

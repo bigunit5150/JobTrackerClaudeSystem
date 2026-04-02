@@ -1,7 +1,7 @@
 {
   "database_name": "Job Tracker",
-  "notion_database_id": "320037c8-790b-8004-9498-d26d7d85322c",
-  "data_source_id": "320037c8-790b-805d-975d-000b6d0dc745",
+  "notion_database_id": "YOUR_DATABASE_ID",
+  "data_source_id": "YOUR_DATA_SOURCE_ID",
   "description": "Stores every saved job posting. The central hub for Phase 2 AI review.",
   "properties": [
     {
