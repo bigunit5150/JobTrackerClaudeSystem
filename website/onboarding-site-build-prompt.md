@@ -327,12 +327,12 @@ function copyPrompt() {
 ```
 
 **Full prompt text to embed in `#onboarding-prompt`:**
-(Copy verbatim from `prompts/onboarding/new-user-onboarding.md` — the full prompt
+(Copy verbatim from `new-user-onboarding.md` — the full prompt
 text inside the ``` code fence. Do not summarize or truncate.)
 
 **Section 2: What Happens Next** (`.grid-3`)
 - "Daily Use" — save jobs, say "Review bookmarked jobs"
-- "Before Each Interview" — new project per opportunity, run init prompt
+- "Before Each Interview" — new chat per opportunity, run init prompt
 - "Resume Changes" — update Notion row, tell Claude to reload
 
 **Completion Callout** (`.callout-bar`, `--amber-dim` background):

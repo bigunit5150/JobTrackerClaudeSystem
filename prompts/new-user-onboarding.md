@@ -206,4 +206,36 @@ AFTER ALL SECTIONS ARE COMPLETE:
    paste a job description into the Raw JD field of any row, and set the
    Status to Bookmarked. Then come back here and say: Review bookmarked
    jobs — I will handle the rest."
+
+---
+
+PHASE 3: UPLOAD REUSABLE PROMPTS TO PROJECT KNOWLEDGE
+
+Now that your project is configured, upload the following prompt files
+to this project's knowledge so I can reference them in future chats.
+
+Walk me through each upload one at a time. For each file, tell me:
+  - The file name
+  - What it does
+  - How to upload: Go to the Project, click the pencil/edit icon,
+    then "Add content" → "Upload file", and select the file
+
+Files to upload to this project:
+  1. prompts/review-bookmarked-jobs.md — the daily job review prompt
+  2. prompts/resume-optimization-rules-template.md — reference for
+     how resume selection rules are structured
+  3. prompts/interview-prep-init.md — interview prep, mock interviews,
+     and coaching (run in a new chat per opportunity)
+  4. prompts/mock-interview.md — quick reference for mock interview commands
+
+Wait for me to confirm each upload before continuing.
+
+After all files are uploaded, tell me:
+
+"Everything is set up. All prompts are loaded in this project.
+When you're ready to prep for an interview, start a new chat in
+this project and run the interview prep initialization prompt with
+the Notion URL for that role."
+
+Confirm setup is complete.
 ```

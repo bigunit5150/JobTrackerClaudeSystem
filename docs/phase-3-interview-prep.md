@@ -2,97 +2,147 @@
 
 ## Overview
 
-For every role you actively pursue, create a dedicated Claude Project. This
-project becomes the living workspace for that opportunity — it accumulates
-context across every conversation, from initial prep through final round to
-post-interview debrief.
+For every role you actively pursue, start a new chat in your Job Search
+Claude Project. This chat becomes the living workspace for that opportunity —
+accumulating context across the entire interview lifecycle: initialization,
+mock interviews, interviewer-specific prep, real interview debriefs, and
+cheat sheet updates.
 
 ---
 
-## Why a Dedicated Project Per Opportunity?
+## Why One Chat Per Opportunity?
 
-Claude Projects persist context. If you prep for a phone screen, then come
-back two days later for the hiring manager round, Claude remembers the company
-research, your talking points, and what you covered in the mock interview —
-without you re-explaining anything. The project builds on itself over time.
+Keeping the entire interview process in a single chat means Claude retains
+full context: company research, your cheat sheet, mock interview feedback,
+and debrief insights. Each interaction builds on the last — no re-explaining,
+no lost context. When you debrief after a real interview, Claude updates your
+master cheat sheet with what you learned and preps you for the next round.
 
 ---
 
-## Project Initialization (Run Once Per Opportunity)
+## Initialization (Run Once Per Opportunity)
 
 When a role moves to "Applying" or "Applied" in your Job Tracker:
 
-1. Go to [claude.ai](https://claude.ai) → Projects → New Project
-2. Name it: `[Company] — [Role Title]` (e.g. "Stripe — Director of Engineering")
+### Option A — Claude Project (Interactive)
+
+1. Open your Job Search Claude Project on [claude.ai](https://claude.ai)
+2. Start a **new chat** for this opportunity
 3. Paste the Job Tracker row URL and run the initialization prompt from
-   `prompts/interview-prep/interview-prep-init.md`
+   `prompts/interview-prep-init.md`
+
+Everything else for this opportunity (mock interviews, interviewer prep,
+debriefs) happens in this same chat.
+
+### Option B — Claude Code (Automated)
+
+```bash
+claude "Run the interview-prep-builder skill for [NOTION ROW URL]"
+```
+
+This creates the Interview Prep Hub row, runs company research, and generates
+the full cheat sheet autonomously. Continue in a Claude Project chat for
+interactive mock interviews and debriefs.
+
+### Option C — OpenClaw (Automated)
+
+```bash
+openclaw "Run the interview-prep-builder skill for [NOTION ROW URL]"
+```
+
+Same as Option B but runs through OpenClaw. Can also be triggered via chat
+(WhatsApp, Slack, etc.) if you have channels configured.
 
 Claude will:
+
 - Read the JD and your optimized resume from Notion
 - Create a row in your Interview Prep Hub
 - Run company research (web search)
-- Generate a cheat sheet with your top stories mapped to the JD
+- Generate a comprehensive master cheat sheet
 - Save everything back to Notion
-
-Paste the Claude Project URL into the Interview Prep Hub row so you can
-navigate back to it from Notion.
 
 ---
 
-## Cheat Sheet Contents
+## Master Cheat Sheet Contents
 
-Claude generates a one-page cheat sheet covering:
+Claude generates a comprehensive cheat sheet with 8 sections:
 
-- **Top 5 STAR stories** mapped to the JD's key requirements
-  (2-3 sentences each, ready to expand in conversation)
-- **3 things to emphasize** specific to this company and role
-- **1-2 gaps to acknowledge** and how to frame them confidently
-- **5 smart questions to ask** the interviewer (role-specific)
-- **Compensation notes** — their likely range vs your minimum, negotiation angles
+1. **Self-Introduction** — a polished 60-90 second intro tailored to this role
+2. **Why This Company** — 3-4 specific, researched reasons for interest
+3. **Key Accomplishments & Metrics** — 8-10 strongest achievements with
+   quantified metrics, organized by theme, mapped to JD requirements
+4. **Top 5 STAR Stories** — mapped to the JD's key requirements, with
+   trigger phrases for when to use each
+5. **3 Things to Emphasize** — specific to this company and role
+6. **1-2 Gaps to Acknowledge** — honest framing, no spin
+7. **5 Questions to Ask** — company-specific, not generic
+8. **Compensation Notes** — market range, your targets, negotiation anchor
+
+The master cheat sheet is a living document. It gets updated after each
+mock interview and real interview debrief as you learn what works.
+
+---
+
+## Interviewer-Specific Cheat Sheets
+
+Before a specific interview round, say in the same chat:
+
+```text
+Prep for [INTERVIEWER NAME], [TITLE] — [ROUND TYPE]
+[Optional: LinkedIn URL, anything you know about them]
+```
+
+Claude will research the interviewer and generate a targeted cheat sheet:
+
+- What this person likely cares about based on their function
+- Which STAR stories and accomplishments to prioritize
+- Tailored questions to ask this specific person
+- Rapport-building angles (shared background, interests)
 
 ---
 
 ## Mock Interviews
 
-After initialization, start a new chat in the same project and run:
+Say in the same chat:
 
-```
-Run a mock [Phone Screen / Hiring Manager / Panel / Final Round] interview
-for [Company] [Role]. Play the interviewer, ask realistic questions for this
-role level, and give me feedback after each answer.
+```text
+Mock [Phone Screen / Hiring Manager / Panel / Final Round] interview.
+Interviewer: [NAME and TITLE if known]
 ```
 
 Claude will:
-- Open with realistic questions based on the round type and role level
-- Stay in character as the interviewer until you finish
-- Give structured feedback: what landed, what to tighten, what to add
 
-Subsequent rounds build on earlier ones — Claude knows what you've already
-practiced and can focus on weaker areas.
+- Play the interviewer with realistic questions for the round type
+- Stay in character through 4-6 questions
+- Give structured feedback after the mock
+- Update the master cheat sheet with improved framings
+- Save notes to Interview Prep Hub
 
 ---
 
 ## Post-Interview Debrief
 
-After each round, come back to the project and run:
+After each real round, come back to the same chat:
 
-```
-I just finished my [round] interview with [Company]. Let me debrief.
-[Describe how it went, questions asked, your answers, any surprises]
+```text
+Debrief [ROUND TYPE] with [INTERVIEWER NAME/TITLE].
+Here's how it went: [describe the interview]
 ```
 
 Claude will:
-- Help you analyze how it went
-- Identify signals from the interviewer's questions
-- Update your prep for the next round
-- Save notes to Interview Prep Hub
+
+- Analyze signals from the interviewer's questions
+- Assess how your answers landed
+- Update the master cheat sheet with lessons learned
+- Prep you for the likely next round
+- Save debrief notes to Interview Prep Hub
 
 ---
 
 ## Prompt Locations
 
 | Use Case | File |
-|---|---|
-| Initialization | `prompts/interview-prep/interview-prep-init.md` |
-| Mock interview | `prompts/interview-prep/mock-interview.md` |
+| --- | --- |
+| Full lifecycle prompt | `prompts/interview-prep-init.md` |
+| Quick command reference | `prompts/mock-interview.md` |
 | Automated version | `skills/interview-prep-builder/SKILL.md` |

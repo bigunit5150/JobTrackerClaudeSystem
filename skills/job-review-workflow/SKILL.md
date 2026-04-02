@@ -7,7 +7,7 @@ for each, and writes results back — with no human in the loop.
 
 This skill chains the logical steps of job evaluation and resume tailoring
 with Notion read/write operations. It is the Phase 2B automation layer
-on top of the manual `prompts/job-review/review-bookmarked-jobs.md` prompt.
+on top of the manual `review-bookmarked-jobs.md` prompt.
 
 ---
 
@@ -17,7 +17,7 @@ on top of the manual `prompts/job-review/review-bookmarked-jobs.md` prompt.
 - Any context where fully autonomous operation is desired
 
 For interactive use with human review between jobs, use the conversational
-prompt in `prompts/job-review/review-bookmarked-jobs.md` instead.
+prompt in `review-bookmarked-jobs.md` instead.
 
 ---
 
@@ -150,6 +150,6 @@ RECOMMENDATION: [Apply / Apply with note / Stretch / Skip]
 - Active resume variants in Resume Repository
 
 ## Related Files
-- `prompts/job-review/review-bookmarked-jobs.md` — manual/interactive version
+- `review-bookmarked-jobs.md` — manual/interactive version
 - `skills/interview-prep-builder/SKILL.md` — downstream Phase 3 skill
 - `docs/phase-2-job-review.md` — full workflow documentation
