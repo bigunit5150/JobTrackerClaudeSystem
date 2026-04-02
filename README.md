@@ -69,14 +69,14 @@ ai-job-search-system/
 
 ## Quick Start
 
-1. **Install the Chrome Extension** — [Job Post Tracker on Chrome Web Store](#) <!-- TODO: add CWS URL -->
+1. **Install the Chrome Extension** — [Job Post Tracker on Chrome Web Store](https://chromewebstore.google.com/detail/ponffclikgodccpghpammcpjpjeojopj?utm_source=item-share-cb)
 2. **Set up Notion** — follow `docs/phase-1-extension.md` and create the three databases defined in `config/notion-databases/`
 3. **Configure Claude** — create a Claude Project and run the prompt in `prompts/new-user-onboarding.md`
 4. **Start saving jobs** — bookmark roles and say "Review bookmarked jobs" in your Claude Project
 5. **Optional: Set up Claude Code** — follow `docs/claude-code-setup.md` to enable automated workflows via the CLI
 6. **Optional: Set up OpenClaw** — follow `docs/openclaw-setup.md` for always-on autonomous processing via [OpenClaw](https://openclaw.ai)
 
-Full setup guide: [kssoftware.net/job-search-ai](https://kssoftware.net/job-search-ai)
+Full setup guide: [kssoftware.net/CareerCopilot](https://kssoftware.net/CareerCopilot)
 
 ---
 

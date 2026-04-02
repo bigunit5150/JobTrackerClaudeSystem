@@ -11,7 +11,7 @@ Tracker database — no copy-pasting required.
 
 ## Installation
 
-1. Go to the Chrome Web Store and search "Job Post Tracker" <!-- TODO: add direct CWS link -->
+1. Install [Job Post Tracker from the Chrome Web Store](https://chromewebstore.google.com/detail/ponffclikgodccpghpammcpjpjeojopj?utm_source=item-share-cb)
 2. Click **Add to Chrome** and confirm the installation prompt
 3. Click the puzzle piece icon in your Chrome toolbar
 4. Find **Job Post Tracker** and click the pin icon to keep it visible

@@ -3,7 +3,7 @@
 > **Where to use:** Paste this entire file into a Claude Code chat in VS Code,
 > opened against the kssoftware.net GitHub Pages repository.
 >
-> **What it produces:** 4 new HTML pages in `/job-search-ai/` plus an update
+> **What it produces:** 4 new HTML pages in `/CareerCopilot/` plus an update
 > to `projects/index.html`.
 
 ---
@@ -11,7 +11,7 @@
 ## Your Mission
 
 Add a 4-page onboarding section to the kssoftware.net GitHub Pages repository.
-The section lives at `/job-search-ai/` and consists of one parent overview page
+The section lives at `/CareerCopilot/` and consists of one parent overview page
 and three sequential setup sub-pages. This is a public-facing product page
 for job seekers, not personal documentation.
 
@@ -104,7 +104,7 @@ Do NOT create a new JS file. All four pages link to `../js/main.js`.
 ## Step 3: File Structure to Create
 
 ```
-job-search-ai/
+CareerCopilot/
   index.html          Parent overview page
   extension.html      Step 1 — Chrome Extension setup
   notion-setup.html   Step 2 — Notion workspace + database setup
@@ -133,7 +133,7 @@ Get Started          → extension.html  (btn btn-primary)
 
 ---
 
-### PAGE 1: job-search-ai/index.html
+### PAGE 1: CareerCopilot/index.html
 
 **Hero**
 - Eyebrow: `AI-POWERED JOB SEARCH`
@@ -178,13 +178,13 @@ Amber bottom border on hover.
 
 ---
 
-### PAGE 2: job-search-ai/extension.html
+### PAGE 2: CareerCopilot/extension.html
 
 **Hero**
 - Eyebrow: `STEP 1 OF 3`
 - H1: `Install the` / `Chrome <em>Extension</em>`
 - CTA: `Install from Chrome Web Store →` (btn-primary)
-  `<!-- TODO: add CWS URL -->`
+  `https://chromewebstore.google.com/detail/ponffclikgodccpghpammcpjpjeojopj?utm_source=item-share-cb`
 
 **Install Steps** (`.steps-grid` + `.step-number` + `.card`)
 1. Install from Chrome Web Store
@@ -213,7 +213,7 @@ LinkedIn, Greenhouse, Lever, Workday, Indeed, Glassdoor, "Any career page"
 
 ---
 
-### PAGE 3: job-search-ai/notion-setup.html
+### PAGE 3: CareerCopilot/notion-setup.html
 
 **Hero**
 - Eyebrow: `STEP 2 OF 3`
@@ -269,7 +269,7 @@ Amber warning callout: keep token private.
 
 ---
 
-### PAGE 4: job-search-ai/claude-setup.html
+### PAGE 4: CareerCopilot/claude-setup.html
 
 **Hero**
 - Eyebrow: `STEP 3 OF 3`
@@ -350,7 +350,7 @@ Add a card for "AI Job Search System":
 - Title: AI Job Search System
 - Body: "Three-tool workflow: Chrome extension saves postings, Claude optimizes
   resumes and evaluates fit, and interview prep cheat sheets are generated automatically."
-- Link: "View Setup Guide →" → `job-search-ai/index.html`
+- Link: "View Setup Guide →" → `CareerCopilot/index.html`
 
 Use exact card markup from existing project cards.
 
@@ -359,7 +359,7 @@ Use exact card markup from existing project cards.
 ## Step 7: Quality Checklist
 
 ### Structural
-- [ ] All 4 pages exist in `job-search-ai/`
+- [ ] All 4 pages exist in `CareerCopilot/`
 - [ ] All asset paths use `../` prefix
 - [ ] `projects/index.html` updated with new card
 
@@ -372,7 +372,7 @@ Use exact card markup from existing project cards.
 
 ### Functionality
 - [ ] All internal links work
-- [ ] Chrome Web Store link has `<!-- TODO: add CWS URL -->` placeholder
+- [x] Chrome Web Store link added
 - [ ] Copy-to-clipboard works with "Copied!" confirmation state
 - [ ] `<details>` expand/collapse works without JS
 - [ ] Mobile nav works (inherited from main.js)
@@ -391,7 +391,7 @@ Use exact card markup from existing project cards.
 ```
 feat: add AI job search system onboarding pages
 
-- Add job-search-ai/ section with 4 pages (overview + 3 setup steps)
+- Add CareerCopilot/ section with 4 pages (overview + 3 setup steps)
 - Covers Chrome extension install, Notion database setup, Claude configuration
 - Includes copy-to-clipboard onboarding prompt on claude-setup.html
 - Updates projects/index.html with new AI Job Search System card
