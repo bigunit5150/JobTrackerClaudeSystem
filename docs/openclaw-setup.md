@@ -11,8 +11,7 @@ workflows autonomously on a schedule or via chat.
 
 - Node.js 22+ (24 recommended)
 - An Anthropic API key or Claude subscription
-- Notion workspace with the three databases already created
-  (see `docs/notion-database-schema.md`)
+- Notion workspace with the [CareerPilot template](https://www.notion.so/342037c8790b819195a6f4aea08e8bb4) duplicated
 - A Notion integration token (see Step 2 below)
 
 ---

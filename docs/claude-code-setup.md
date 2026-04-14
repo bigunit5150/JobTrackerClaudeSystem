@@ -10,7 +10,7 @@ giving the skills direct read/write access to your databases.
 
 - [Claude Code](https://claude.ai/code) installed (CLI, VS Code extension, or JetBrains plugin)
 - Node.js 18+ (required to run the Notion MCP server)
-- Notion workspace with the three databases already created (see `docs/notion-database-schema.md`)
+- Notion workspace with the [CareerPilot template](https://www.notion.so/342037c8790b819195a6f4aea08e8bb4) duplicated
 
 ---
 

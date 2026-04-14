@@ -29,7 +29,7 @@ When a role moves to "Applying" or "Applied" in your Job Tracker:
 1. Open your Job Search Claude Project on [claude.ai](https://claude.ai)
 2. Start a **new chat** for this opportunity
 3. Paste the Job Tracker row URL and run the initialization prompt from
-   `prompts/interview-prep-init.md`
+   `prompts/interview-prep.md`
 
 Everything else for this opportunity (mock interviews, interviewer prep,
 debriefs) happens in this same chat.
@@ -143,6 +143,5 @@ Claude will:
 
 | Use Case | File |
 | --- | --- |
-| Full lifecycle prompt | `prompts/interview-prep-init.md` |
-| Quick command reference | `prompts/mock-interview.md` |
+| Full lifecycle (init + mock + debrief) | `prompts/interview-prep.md` |
 | Automated version | `skills/interview-prep-builder/SKILL.md` |

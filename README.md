@@ -1,6 +1,6 @@
-# AI Job Search System
+# CareerPilot
 
-An AI-powered job search workflow built on Claude and Notion. Save job postings with a Chrome extension, get AI-optimized resumes for each role, and walk into every interview with a tailored cheat sheet — automated through Claude Projects, Claude Code, or OpenClaw.
+An AI career coaching platform built on Claude and Notion. Save job postings with a Chrome extension, get AI-optimized resumes for each role, and walk into every interview with a tailored cheat sheet — powered by Claude Projects, Claude Code, or OpenClaw.
 
 ---
 
@@ -37,11 +37,12 @@ ai-job-search-system/
 │   └── changelog.md                   Version history
 │
 ├── prompts/
-│   ├── new-user-onboarding.md         Guided first-time setup prompt
-│   ├── review-bookmarked-jobs.md      Daily job review prompt
-│   ├── interview-prep-init.md         Per-opportunity prep prompt
-│   ├── mock-interview.md              Mock interview runner prompt
-│   └── resume-optimization-rules-template.md  Blank rules template
+│   ├── system-prompt.md               Master context — upload to Project instructions
+│   ├── onboarding.md                  First-time setup (run once)
+│   ├── review-jobs.md                 Daily job review trigger
+│   ├── interview-prep.md              Full interview lifecycle (init + mock + debrief)
+│   ├── setup-validation.md            Post-setup verification checklist
+│   └── resume-selection-rules-template.md  Blank rules template (optional)
 │
 ├── skills/
 │   ├── job-review-workflow/
@@ -70,13 +71,26 @@ ai-job-search-system/
 ## Quick Start
 
 1. **Install the Chrome Extension** — [Job Post Tracker on Chrome Web Store](https://chromewebstore.google.com/detail/ponffclikgodccpghpammcpjpjeojopj?utm_source=item-share-cb)
-2. **Set up Notion** — follow `docs/phase-1-extension.md` and create the three databases defined in `config/notion-databases/`
-3. **Configure Claude** — create a Claude Project and run the prompt in `prompts/new-user-onboarding.md`
-4. **Start saving jobs** — bookmark roles and say "Review bookmarked jobs" in your Claude Project
-5. **Optional: Set up Claude Code** — follow `docs/claude-code-setup.md` to enable automated workflows via the CLI
-6. **Optional: Set up OpenClaw** — follow `docs/openclaw-setup.md` for always-on autonomous processing via [OpenClaw](https://openclaw.ai)
+2. **Duplicate the Notion Template** — [CareerPilot Notion Template](https://www.notion.so/342037c8790b819195a6f4aea08e8bb4) creates your dashboard, all three databases, and pre-built views in one click
+3. **Create a Claude Project** — upload `prompts/system-prompt.md` to the project instructions
+4. **Run onboarding** — paste `prompts/onboarding.md` to configure resumes and selection rules
+5. **Validate your setup** — run `prompts/setup-validation.md` to verify everything is connected
+6. **Start saving jobs** — bookmark roles and say "Review bookmarked jobs" in your Claude Project
 
-Full setup guide: [kssoftware.net/CareerCopilot](https://kssoftware.net/CareerCopilot)
+See how it works: [kssoftware.net/CareerCopilot](https://kssoftware.net/CareerCopilot/how-it-works.html)
+
+---
+
+## Setup Order
+
+| Step | File | How to Use |
+|---|---|---|
+| 1 | `prompts/system-prompt.md` | Upload to Claude Project **instructions** (not knowledge). Runs silently in every conversation. |
+| 2 | `prompts/onboarding.md` | Paste into a chat in your Claude Project. Run once to set up resumes and selection rules. |
+| 3 | `prompts/setup-validation.md` | Paste into a chat to verify everything is connected and working. |
+| 4 | `prompts/review-jobs.md` | Say "Review bookmarked jobs" — or paste this prompt for the full workflow instructions. |
+| 5 | `prompts/interview-prep.md` | Start a new chat per opportunity. Covers init, mock interviews, debriefs, and cheat sheet updates. |
+| — | `prompts/resume-selection-rules-template.md` | Optional. Blank template for manual setup if you skip interactive onboarding. |
 
 ---
 

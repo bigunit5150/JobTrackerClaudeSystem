@@ -20,13 +20,15 @@ Tracker database — no copy-pasting required.
 
 ## Configuration
 
-The extension requires two values from your Notion workspace.
+The extension requires two values from your Notion workspace. If you've
+already duplicated the [CareerPilot Notion template](https://www.notion.so/342037c8790b819195a6f4aea08e8bb4),
+your databases are ready — you just need the integration token and database ID.
 
 ### Notion Integration Token
 
 1. Go to [notion.so/profile/integrations](https://notion.so/profile/integrations)
 2. Click **New integration**
-3. Name it (e.g. "Job Search AI") and select your workspace
+3. Name it (e.g. "CareerPilot") and select your workspace
 4. Copy the **Internal Integration Token** — it starts with `secret_`
 5. Paste it into the extension popup under "Notion Token"
 

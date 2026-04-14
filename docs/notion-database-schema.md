@@ -1,7 +1,9 @@
 # Notion Database Schemas
 
-All three databases should be created in the same Notion parent page or
-workspace. JSON schema files for each are in `config/notion-databases/`.
+> **Quick setup:** Duplicate the [CareerPilot Notion template](https://www.notion.so/342037c8790b819195a6f4aea08e8bb4) to create all three databases with the correct schema automatically. The documentation below is kept as a reference for understanding field names when writing prompts.
+
+All three databases live in the same Notion workspace. JSON schema files
+for each are in `config/notion-databases/`.
 
 ---
 

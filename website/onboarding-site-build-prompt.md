@@ -1,4 +1,4 @@
-# Claude Code Build Prompt: AI Job Search System — Onboarding Website
+# Claude Code Build Prompt: CareerPilot — Onboarding Website
 
 > **Where to use:** Paste this entire file into a Claude Code chat in VS Code,
 > opened against the kssoftware.net GitHub Pages repository.
@@ -327,7 +327,7 @@ function copyPrompt() {
 ```
 
 **Full prompt text to embed in `#onboarding-prompt`:**
-(Copy verbatim from `new-user-onboarding.md` — the full prompt
+(Copy verbatim from `prompts/onboarding.md` — the full prompt
 text inside the ``` code fence. Do not summarize or truncate.)
 
 **Section 2: What Happens Next** (`.grid-3`)
@@ -345,9 +345,9 @@ text inside the ``` code fence. Do not summarize or truncate.)
 
 ## Step 6: Update projects/index.html
 
-Add a card for "AI Job Search System":
+Add a card for "CareerPilot":
 - Badge: `AI SYSTEM`
-- Title: AI Job Search System
+- Title: CareerPilot
 - Body: "Three-tool workflow: Chrome extension saves postings, Claude optimizes
   resumes and evaluates fit, and interview prep cheat sheets are generated automatically."
 - Link: "View Setup Guide →" → `CareerCopilot/index.html`
@@ -394,5 +394,5 @@ feat: add AI job search system onboarding pages
 - Add CareerCopilot/ section with 4 pages (overview + 3 setup steps)
 - Covers Chrome extension install, Notion database setup, Claude configuration
 - Includes copy-to-clipboard onboarding prompt on claude-setup.html
-- Updates projects/index.html with new AI Job Search System card
+- Updates projects/index.html with new CareerPilot card
 ```

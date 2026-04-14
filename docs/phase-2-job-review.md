@@ -74,18 +74,18 @@ Using your Resume Selection Rules from the Resume Repository, Claude evaluates:
 - Does the role level match your targets?
 - Does the location/arrangement work?
 - Maps the top 5 JD requirements to your experience: Strong / Partial / Gap
-- Assigns overall fit: 🟢 Green / 🟡 Yellow / 🔴 Red
+- Assigns a fit score (1-10) with rationale
 
-**If 🔴 Red:**
+**If score is below 6:**
 
-- Writes assessment to AI Notes explaining why
+- Writes assessment and score to AI Notes explaining why
 - Sets Status → "AI Reviewed - Skip"
 - Moves to next job — no resume generated
 
 ### Step 3 — Resume Selection
 
-For Green and Yellow roles, Claude selects the appropriate resume variant based
-on your selection rules. The choice is documented in AI Notes.
+For roles scoring 6 or above, Claude selects the appropriate resume variant
+based on your selection rules. The choice is documented in AI Notes.
 
 ### Step 4 — Resume Optimization
 
@@ -109,7 +109,7 @@ Claude rewrites the selected resume to mirror the JD's language and priorities.
 
 Claude updates the job row with:
 
-- **AI Notes**: fit tier, resume selection rationale, top 3 strengths,
+- **AI Notes**: fit score (1-10), resume selection rationale, top 3 strengths,
   top 1-2 gaps, recommendation (apply / apply with note / stretch)
 - **Resume**: full optimized resume text
 - **Status**: "AI Reviewed"
@@ -121,7 +121,7 @@ Claude updates the job row with:
 Claude writes AI Notes in a consistent format:
 
 ```text
-FIT: 🟢 Green
+FIT SCORE: 9/10
 
 RESUME SELECTED: Director of Engineering - Base
 REASON: Role requires 5+ years managing managers, multi-team scope (50+ eng),
@@ -143,7 +143,7 @@ RECOMMENDATION: Apply — strong fit, resume optimized for key signals.
 ## Prompt Location
 
 The manual trigger prompt lives at:
-`review-bookmarked-jobs.md`
+`prompts/review-jobs.md`
 
 The automated skill lives at:
 `skills/job-review-workflow/SKILL.md`

@@ -1,20 +1,24 @@
 ---
 prompt: Resume Selection Rules Template
 phase: Setup
-version: 1.0
-last_updated: 2026-03-29
-note: This is a blank template. Your personal version is generated during
-      onboarding and saved to your Notion Resume Repository.
+version: 2.0
+last_updated: 2026-04-13
+note: Blank template for manual setup. Your personal version is generated
+      during onboarding and saved to your Notion Resume Repository as
+      "Resume Selection Rules v1.0" (Category: Other).
 ---
 
 # Resume Selection Rules — Template
 
-This document is generated during onboarding and stored in your Notion
-Resume Repository. Claude reads it on every job review to apply your
-preferences consistently.
+This document is stored in your Notion Resume Repository as a row named
+"Resume Selection Rules v1.0" with Category = "Other". Claude reads it
+before every job review to apply your preferences consistently.
 
-Fill in each section or run the onboarding prompt to generate it
-interactively from your uploaded resumes.
+**Two ways to create this document:**
+- **Recommended:** Run `prompts/onboarding.md` — Claude generates it
+  interactively from your resumes
+- **Manual:** Fill in this template and paste it into the Resume Content
+  field of a new Resume Repository row
 
 ---
 

@@ -93,16 +93,18 @@ or mix them.
 
 #### Claude Projects (claude.ai)
 
-Interactive mode. You run prompts in Claude Projects with the Notion
-integration enabled under Settings > Integrations > Notion.
+Interactive mode. Create one Claude Project with the Notion integration
+enabled under Settings > Integrations > Notion. Upload `prompts/system-prompt.md`
+to the project instructions so Claude has full system context in every chat.
 
-| Project | Purpose |
+| Chat | Purpose |
 | --- | --- |
-| [Your Name] — Job Search | Phase 2 home: all job reviews run here |
-| [Company] — [Role] | Phase 3: one project per opportunity being actively pursued |
+| Onboarding chat | Run `prompts/onboarding.md` once to configure resumes and rules |
+| Job review chat | Say "Review bookmarked jobs" to process all Bookmarked roles |
+| [Company] — [Role] chat | One chat per opportunity for interview prep lifecycle |
 
-The Job Search project holds your Resume Selection Rules as project knowledge.
-Each opportunity project is seeded with the JD and your optimized resume at init.
+Resume Selection Rules are stored in Notion (Resume Repository) and read
+by Claude on demand — no manual project knowledge uploads needed.
 
 #### Claude Code (CLI / IDE)
 
