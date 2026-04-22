@@ -76,6 +76,8 @@ in this one chat, building context with each interaction.
 
 ### Notion Workspace Structure
 
+All three databases are available as a pre-built template — duplicate it at https://www.notion.so/342037c8790b819195a6f4aea08e8bb4 to get started without any manual configuration.
+
 Three databases, all living in a single Notion parent page:
 
 | Database | Purpose |

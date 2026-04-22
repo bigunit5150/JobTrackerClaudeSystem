@@ -3,7 +3,7 @@ prompt: CareerPilot Onboarding
 phase: Setup
 version: 2.0
 last_updated: 2026-04-13
-depends_on: Notion template duplicated, Notion connector active
+depends_on: Notion template duplicated, Notion connector active, Chrome extension installed
 trigger: Run once in your CareerPilot Claude Project on first use
 ---
 
@@ -26,13 +26,28 @@ confirmation before moving to the next step.
 
 ---
 
-STEP 1 — PREREQUISITES CHECK
+**Step 1 — Duplicate the CareerPilot Notion Template**
+
+Before continuing, confirm you have duplicated the CareerPilot Notion
+template. If not:
+
+1. Go to: https://www.notion.so/342037c8790b819195a6f4aea08e8bb4
+2. Click "Duplicate" in the top-right corner of the page
+3. Wait for Notion to copy all three databases and the dashboard into
+   your workspace
+4. Open your Job Tracker database and copy the database ID from the
+   URL — you will need this when configuring the Chrome extension
+
+Once confirmed, continue below.
+
+---
+
+STEP 2 — PREREQUISITES CHECK
 
 Before we begin, confirm each of these. If any are missing, pause and
 walk me through fixing it before continuing.
 
 1. Notion template: Have I duplicated the CareerPilot Notion template?
-   (https://www.notion.so/342037c8790b819195a6f4aea08e8bb4)
    Try to read from my Job Tracker database to confirm.
 
 2. Notion connection: Can you access my Notion workspace right now?
@@ -46,7 +61,7 @@ If all three are confirmed, proceed. If not, help me fix what's missing.
 
 ---
 
-STEP 2 — DATABASE ID COLLECTION
+STEP 3 — DATABASE ID COLLECTION
 
 I need to configure the Chrome extension with my Job Tracker database ID.
 Walk me through finding it:
@@ -65,7 +80,7 @@ Connection" button works before continuing.
 
 ---
 
-STEP 3 — RESUME INTAKE
+STEP 4 — RESUME INTAKE
 
 Ask me to paste my current resume(s). For each resume I provide:
 
@@ -90,7 +105,7 @@ Confirm how many rows were created before moving on.
 
 ---
 
-STEP 4 — BUILD RESUME SELECTION RULES
+STEP 5 — BUILD RESUME SELECTION RULES
 
 This is the most important step. Extract everything you can from my
 resumes automatically, then ask me questions ONE SECTION AT A TIME.
@@ -218,7 +233,7 @@ AFTER ALL SECTIONS ARE COMPLETE:
 
 ---
 
-STEP 5 — SETUP CONFIRMATION
+STEP 6 — SETUP CONFIRMATION
 
 Perform a final check by reading back the databases you can see via
 the Notion connector:
@@ -238,7 +253,7 @@ Show me a summary:
 
 ---
 
-STEP 6 — WHAT'S NEXT
+STEP 7 — WHAT'S NEXT
 
 Tell me:
 

@@ -70,9 +70,9 @@ ai-job-search-system/
 
 ## Quick Start
 
-1. **Install the Chrome Extension** — [Job Post Tracker on Chrome Web Store](https://chromewebstore.google.com/detail/ponffclikgodccpghpammcpjpjeojopj?utm_source=item-share-cb)
-2. **Duplicate the Notion Template** — [CareerPilot Notion Template](https://www.notion.so/342037c8790b819195a6f4aea08e8bb4) creates your dashboard, all three databases, and pre-built views in one click
-3. **Create a Claude Project** — upload `prompts/system-prompt.md` to the project instructions
+1. **Duplicate the Notion Template** — Duplicate the template at [CareerPilot Notion Template](https://www.notion.so/342037c8790b819195a6f4aea08e8bb4) — all three databases and the dashboard are included.
+2. **Install the Chrome Extension** — [Job Post Tracker on Chrome Web Store](https://chromewebstore.google.com/detail/ponffclikgodccpghpammcpjpjeojopj?utm_source=item-share-cb)
+3. **Set Up Claude Project** — upload `prompts/system-prompt.md` to the project instructions
 4. **Run onboarding** — paste `prompts/onboarding.md` to configure resumes and selection rules
 5. **Validate your setup** — run `prompts/setup-validation.md` to verify everything is connected
 6. **Start saving jobs** — bookmark roles and say "Review bookmarked jobs" in your Claude Project
